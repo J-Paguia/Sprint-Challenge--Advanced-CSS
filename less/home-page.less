@@ -72,4 +72,80 @@
       }
     }
   }
-}// home
+}// homme
+
+// Start of my Selectors
+
+.image-header {
+  width: 800px;
+  margin: 0 auto;
+
+  @media @phone {
+    img {
+      width: 500px;
+    }
+  }
+}
+
+.btn  {
+  display: flex;
+  .fonts(1.5rem, Verdana);  //Parametric Mixin
+  .btn-color();  // Mixin
+
+  // background-color: #23293B;
+  // color: white;
+  height: 2.7vh;
+  border-radius: 5px;
+  
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+
+  @media @phone {
+      width: 460px;
+      height: 5vh;  
+  }
+}
+
+.btn:hover  {
+  color: #23293B;
+  background-color: #EEEEEE;
+}
+
+// Media Query: 500px
+@media (max-width: 500px) {
+  .sky, .launch   {
+    display: none;
+  }
+
+  .home .space-images img{
+    width: 500px;
+  }
+
+  .home .walk {
+    flex-direction: column-reverse;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 2%;
+    padding-top: 4%;
+
+    .walk-img {
+      width: 460px;
+      margin-left: 0;
+    }
+
+    .walk-text {
+      width: 460px;
+      padding-top: 4%;
+    }
+  }
+
+  // .image-header img{
+  //   width: 500px;;
+  // }
+
+
+  
+
+  
+}

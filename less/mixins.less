@@ -1,1 +1,17 @@
 // Mixins Here
+.center() {
+   display: flex;
+   flex-direction: column;   
+   align-items: center;
+ }
+
+ .btn-color() {
+   background-color: #23293B;
+   color:white;
+ }
+
+ // Parametric Mixin
+ .fonts(@size, @fam){
+   font-size:@size;
+   font-family:@fam;  
+ }
